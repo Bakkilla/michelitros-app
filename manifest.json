@@ -1,0 +1,9 @@
+{
+  "name": "PromoPilot Michelitros",
+  "short_name": "PromoPilot",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#20B8A9",
+  "theme_color": "#20B8A9",
+  "description": "Generador rápido de promos para botillería."
+}

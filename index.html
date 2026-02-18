@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#20B8A9" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Botillería Michelitros</title>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>🛒 Botillería Michelitros</h1>
+      <small>Compra rápida + WhatsApp</small>
+      <div id="syncStatus" class="sync ok">Conectado</div>
+    </div>
+    <div class="topActions">
+      <a class="secondary actionLink" href="https://docs.google.com/spreadsheets/d/1PapORm_xsoCtIIlh6vWXqZWd70d0UBGyO8UMK6w3ZgE/edit" target="_blank" rel="noopener">Editar catálogo</a>
+      <button id="installBtn" class="secondary" hidden>Instalar</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section>
+      <div class="searchWrap">
+        <input id="search" placeholder="Buscar producto..." />
+      </div>
+      <div id="chips" class="chips"></div>
+      <div id="grid" class="grid"></div>
+    </section>
+
+    <aside class="cart card">
+      <h2>Tu carro</h2>
+      <div id="cartItems" class="cartItems"></div>
+      <div class="totals">
+        <div><span>Subtotal</span><strong id="subtotal">$0</strong></div>
+      </div>
+      <label>Nombre
+        <input id="cliente" placeholder="Tu nombre" />
+      </label>
+      <label>Nota (opcional)
+        <input id="nota" placeholder="Ej: retiro en 20 min" />
+      </label>
+      <button id="checkoutBtn">Enviar pedido por WhatsApp</button>
+    </aside>
+  </main>
+
+  <script src="app.js?v=20260218-1149"></script>
+</body>
+</html>

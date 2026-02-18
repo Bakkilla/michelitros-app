@@ -1,0 +1,26 @@
+:root{--p:#20B8A9;--s:#3B2A6E;--a:#E5A34A;--c:#F4E7CB;--t:#111318;--w:#fff}
+*{box-sizing:border-box} body{margin:0;font-family:system-ui;background:#f5f7f8;color:var(--t)}
+.topbar{position:sticky;top:0;z-index:5;background:var(--s);color:#fff;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.topbar h1{margin:0;font-size:18px}.topbar small{opacity:.85}
+.topActions{display:flex;gap:8px;align-items:center}
+.actionLink{display:inline-block;text-decoration:none}
+.sync{display:inline-block;margin-top:6px;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:700}
+.sync.ok{background:#0d9f6e;color:#fff}
+.sync.warn{background:#E5A34A;color:#2a1d00}
+.layout{display:grid;grid-template-columns:1fr 340px;gap:14px;padding:14px;max-width:1200px;margin:0 auto}
+.card{background:#fff;border-radius:14px;padding:12px;box-shadow:0 6px 16px rgba(0,0,0,.08)}
+.searchWrap input{width:100%;padding:12px;border:1px solid #ddd;border-radius:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.chips button{border:1px solid #ddd;background:#fff;padding:7px 10px;border-radius:999px}
+.chips button.active{background:var(--p);color:#fff;border-color:var(--p)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}
+.item{background:#fff;border-radius:12px;padding:10px;border:1px solid #ececec;display:grid;gap:6px}
+.item .cat{font-size:11px;color:#666}.item .name{font-weight:700}.item .price{color:var(--s);font-weight:800}
+button{border:0;background:var(--s);color:#fff;padding:10px 12px;border-radius:10px;font-weight:700;cursor:pointer}
+button.secondary{background:var(--a);color:#2a1d00}
+.cartItems{display:grid;gap:8px;max-height:45vh;overflow:auto;margin-bottom:10px}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:6px;align-items:center;border-bottom:1px dashed #eee;padding-bottom:6px}
+.qty{display:flex;align-items:center;gap:5px}.qty button{padding:3px 8px;border-radius:8px}
+.totals{border-top:1px solid #eee;padding-top:8px;margin:8px 0}.totals>div{display:flex;justify-content:space-between}
+label{display:grid;gap:6px;font-size:12px;margin-bottom:8px}label input{padding:10px;border:1px solid #ddd;border-radius:8px}
+@media (max-width:900px){.layout{grid-template-columns:1fr}.cart{position:sticky;bottom:8px}}
