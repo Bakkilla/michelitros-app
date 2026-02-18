@@ -4,7 +4,7 @@ const PHONE = '56984643355';
  * URL del Web App (Apps Script) que expone productos y recibe órdenes.
  * Debe terminar en /exec
  */
-const BRIDGE_URL = 'https://script.google.com/macros/s/AKfycby2N4OTQd3cp2Z9TOJsSEUPzR90It6izDVPwo-v9QbJuQ7LIytMpiddrMh46R9nFXqF/exec';
+const BRIDGE_URL = 'https://script.google.com/macros/s/AKfycbyTS-bv1vXnI3L98ozlGEQAUMMVnqvjfWKveZqsxupTBHTZfvDehw5sYjmJ2r4Ln4pf/exec';
 
 const FALLBACK_PRODUCTS = [
   { id: '1', cat: 'Alcohol', name: 'Whisky Jack Daniels', price: 23500, active: true, sort: 10 },
